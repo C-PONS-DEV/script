@@ -16,7 +16,7 @@ else
     echo "Installation de ssh annulée"
 fi
 
-echo -n "Voulez vous permettre a l'utilisateur root d'accéder au ssh (y/n)?"
+echo -n "Voulez vous permettre à l'utilisateur root d'accéder au ssh (y/n)?"
 read ouinon
 if [ "$ouinon" = "y" ] || [ "$ouinon" = "Y" ]; then
     rm /etc/ssh/sshd_config
@@ -32,7 +32,7 @@ if [ "$ouinon" = "y" ] || [ "$ouinon" = "Y" ]; then
     
     echo "Configuration terminée"
 else
-    echo "L'utilisateur root ne pourra pas se connecté en ssh"
+    echo "L'utilisateur root ne pourra pas se connecter en ssh"
 fi
 
 
@@ -43,7 +43,7 @@ apt-get install -y apache2
 systemctl enable apache2
 
 ip a
-echo "Vous pouvez vous rendre sur http://ip voir si le site et fonctionnel"
+echo "Vous pouvez vous rendre sur http://ip voir si le site et fonctionnel."
 
 a2enmod rewrite
 a2enmod deflate
@@ -58,7 +58,7 @@ apt-get install -y php-pdo php-mysql php-zip php-gd php-mbstring php-curl php-xm
 
 echo "<?php phpinfo(); ?>" >> /var/www/html/info.php
 
-echo "Vous pouvez vous rendre sur http://ip/info.php pour voir les info php"
+echo "Vous pouvez vous rendre sur http://ip/info.php pour voir les infos php."
 
 echo "Installation de mariadb"
 apt-get install -y mariadb-server
@@ -72,7 +72,7 @@ read ouinon
 if [ "$ouinon" = "y" ] || [ "$ouinon" = "Y" ]; then
     echo "Installation de phpmyadmin"
     apt-get install phpmyadmin -y
-    echo "Installation de phpmyadmin terminée, rendez vous sur http://ip/phpmyadmin "
+    echo "Installation de phpmyadmin terminée, rendez vous sur http://ip/phpmyadmin."
 else
     echo "Installation de phpmyadmin annulée"
 fi
