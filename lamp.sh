@@ -11,8 +11,6 @@ if [ "$ouinon" = "y" ] || [ "$ouinon" = "Y" ]; then
     echo "Installation de ssh"
     apt-get install openssh-server -y
     echo "Installation de openssh-server terminée"
-    elif [ "$ouinon" = "n" ] || [ "$ouinon" = "N" ]; then
-    echo "Installation de ssh annulée"
 else
-    echo "Il faut taper Y/N ou y/n"
+    echo "Installation de ssh annulée"
 fi
