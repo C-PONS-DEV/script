@@ -55,7 +55,6 @@ systemctl restart apache2
 echo "Installation de php"
 apt-get install -y php
 apt-get install -y php-pdo php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath
-nano /var/www/html/info.php
 
 echo "<?php phpinfo(); ?>" >> /var/www/html/info.php
 
