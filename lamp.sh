@@ -8,7 +8,7 @@ echo "Lancez avec l'utilisateur root"
 echo "Voulez vous installation un serveur ssh (y/n)? "
 read answer
 
-if $answer == "y" ; then
+if $answer = "y" ; then
     echo "Installation de ssh"
     apt-get install openssh-server -y
     echo "Installation de openssh-server terminée"
