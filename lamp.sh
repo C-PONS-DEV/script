@@ -5,10 +5,10 @@ echo "Script d'installation automatique de LAMP (Apache2 - PHP - MariaDB - PHPMY
 echo "Lancez avec l'utilisateur root"
 
 
-echo answer  "Voulez vous installation un serveur ssh (y/n)? "
+echo "Voulez vous installation un serveur ssh (y/n)? "
 read answer
 
-if answer == "y"
+if $answer == "y"
 then
     echo "Installation de ssh"
     apt-get install openssh-server
