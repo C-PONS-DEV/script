@@ -1,4 +1,3 @@
-#!/bin/bash
 # lamp.sh
 
 echo "Script d'installation automatique de LAMP (Apache2 - PHP - MariaDB - PHPMYADMIN)"
