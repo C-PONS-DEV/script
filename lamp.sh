@@ -8,7 +8,7 @@ echo "Connexion avec l'utilisateur root"
 su -
 
 
-echo -n "Voulez vous installation un serveur ssh (y/n)? "
+echo "Voulez vous installation un serveur ssh (y/n)? "
 read answer
 
 if answer == "y"
