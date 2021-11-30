@@ -13,7 +13,7 @@ cd script
 ```
 
 ```bash
-sh script.sh
+sh global.sh
 ```
 
 ## License
